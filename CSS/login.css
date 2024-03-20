@@ -1,0 +1,123 @@
+:root {
+    --pre: #605dff;
+    --pre-dark: #4a00e0;
+    --pre-light: #5da8ff;
+    --sec: #1d1d1d;
+    --soc-back: #e9e9e9;
+    --soc-back-hover: #dddddd;
+    --text: #1f2346;
+    --white: #ffffff;
+    --violet: #8e2de2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../IMAGES/b1.jpg') no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.socials img{
+    width: 3.0rem;
+    height: 3.0rem;
+}
+.socials>a {
+    padding: 0.5rem;
+    border-radius: 10rem;
+    width: 100%;
+    min-height: 3rem;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--text);
+    padding: 0.5rem;
+    font-weight: 700;
+}
+.socials>a:hover{
+    background: var(--soc-back-hover);
+}
+.login-welcome{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    gap: 1rem;
+    background: var(--white);
+    width: 100%;
+    max-width: 32rem;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    height: fit-content;
+}
+.my-form button{
+    background: var(--pre);
+    color: var(--white);
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    line-height: 3rem;
+    outline: none;
+    letter-spacing: .02rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 800;
+    min-height: 3rem;
+    width: 100%;
+    border-radius: 10rem;
+    transition: all .4s ease;
+}
+.form-button:hover{
+    background: var(--pre-dark);
+}
+.inputs{
+    position: relative;
+    padding: 0.9rem 0 0;
+    margin-bottom: 0.5rem;
+}
+.form-action {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: var(--sec);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+.form-action a {
+    color: var(--sec);
+    font-weight: 600;
+    text-decoration: none;
+}
+.my-form-action a:hover{
+    text-decoration: underline;
+}
+.my-form-row{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+}

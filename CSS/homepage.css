@@ -10,7 +10,8 @@ nav {
 nav > a {
     color: black;
     text-decoration: none;
-    font: bold 15px 'Segoe UI', Tahoma, sans-serif;
+    font: bold 15
+                         px 'Segoe UI', Tahoma, sans-serif;
     padding: 8px 16px;
     border-radius: 22px;
 }

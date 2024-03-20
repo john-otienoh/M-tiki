@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="icon" href="../IMAGES/b2.jpg">
+    <title>Document</title>
+    <script>
+        let login = document.querySelector(".my-form");
+        login.addEventListener("submit", (e) => {e.preventDefault();
+        let email = document.getElementById("email");
+        let password = document.getElementById("password")
+
+        console.log("Email:", email.value);
+        console.log("Password:", password.value);
+        })
+    </script>
+</head>
+<body>
+    <form class="my-form">
+        <div class="login-welcome">
+            <h1>Welcome Back &#x1F44F;</h1>
+            <p>Enter your details</p>
+        </div>
+        <div class="inputs">
+            <input type="email" id='email' name="email" class="input-field" placeholder="Your Email" required autocomplete="off"
+            title="MInimum 8 characters at least 1 alphabet and 1 number" pattern="^(?=.*[A-Z-z])(?=.*\d)[A-Za-z\d]{8,}$">
+            <label for="email" class="input-label">
+                Email:
+            </label>
+        </div>
+        <div class="inputs">
+            <input type="password" id='password' name="email" class="input-field" placeholder="Your Password" required autocomplete="off">
+            <label for="password" class="input-label">
+                Password:
+            </label>
+        </div>
+        <button type="submit" class="form-button">
+            Login
+        </button>
+        <div class="socials">
+            <a href="#" title="Use Google">
+                <img src="../IMAGES/g2.jpeg" alt="Google">
+                Login With Google
+            </a>
+        </div>
+        <div class="form-action">
+            <div class="my-form-row">
+                <sapn>Don't have an account?</sapn>
+                <a href="#" title="Create Account">
+                    Sign Up
+                </a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
